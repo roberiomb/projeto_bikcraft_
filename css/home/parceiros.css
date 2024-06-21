@@ -52,5 +52,9 @@
     .parceiros li:nth-child(7) {
         border-left: none;
     }
+    .parceiros li {
+        display: flex;
+        padding: 20px;
     
+}
 }
