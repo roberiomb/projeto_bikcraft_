@@ -1,0 +1,8 @@
+.bicicletas-bg {
+  background: var(--cor-11);
+}
+
+.bicicletas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
