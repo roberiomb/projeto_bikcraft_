@@ -27,6 +27,24 @@
   background: var(--cor-10);
   color: var(--cor-2);
 }
+.botao.seta {
+  display: flex ;
+  align-items: center;
+}
+
+.botao.seta:hover::after {
+transform: translatex(4px);
+
+}
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 18px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: transform 0.2s;
+}
 
 .botao.secundario:hover {
   background: var(--cor-9);
