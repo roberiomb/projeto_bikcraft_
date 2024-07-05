@@ -17,6 +17,8 @@
   color: var(--cor-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
@@ -27,30 +29,29 @@
   background: var(--cor-10);
   color: var(--cor-2);
 }
-.botao.seta {
-  display: flex ;
-  align-items: center;
-}
-
-.botao.seta:hover::after {
-transform: translatex(4px);
-
-}
-.botao.seta::after {
-  content: "";
-  display: inline-block;
-  height: 10px;
-  width: 18px;
-  margin-left: 12px;
-  background: url(../../img/icones/seta.svg);
-  transition: transform 0.2s;
-}
 
 .botao.secundario:hover {
   background: var(--cor-9);
-  color: var(--cor-2);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
 
 @media (max-width: 600px) {
   .botao {
@@ -64,7 +65,6 @@ transform: translatex(4px);
   color: var(--cor-p1);
   font: 500 1.5rem/1.5 "Poppins", sans-serif;
   text-transform: uppercase;
-
 }
 
 .link::after {
@@ -75,13 +75,11 @@ transform: translatex(4px);
   background-color: currentColor;
 }
 
-
-.link:hover{
-  color:white;
+.link:hover {
+  color: var(--cor-0);
 }
 
-/* Titulo Internos */
-
+/* titulo internas */
 .titulo-bg {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -90,17 +88,16 @@ transform: translatex(4px);
 
 .titulo p {
   margin-bottom: 4px;
-  text-transform: uppercase;
 }
 
-@media (width <= 800px) {
+@media (max-width: 800px) {
   .titulo-bg {
     padding-top: 40px;
     padding-bottom: 40px;
   }
   .titulo p {
-    font-size: 1rem; 
+    font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
-   }
+  }
 }
